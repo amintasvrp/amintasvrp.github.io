@@ -1,7 +1,7 @@
 ---
 #-------------------------------
 # Site Settings
-title: Amintas' Portfolio
+title: Amintas Victor
 logo: /images/logo.png
 logoOver: /images/logo-over.png
 description: Mria is a multipurpose blog theme for Jekyll
@@ -11,46 +11,36 @@ color_scheme: auto # You can choose three modes auto, light, and dark. By defaul
 # Navigation Settings
 menu__settings:
   menu__items:
-    - title: "Blog"
-      url: "/blog/"
-    - title: "Authors"
-      url: "/authors/"
-    - title: "Videos"
-      url: "/videos/"
-    - title: "Pages"
-      submenu:
-        - url: "/about/"
-          title: "About"
-        - url: "/contact/"
-          title: "Contact"
-        - url: "/elements/"
-          title: "Elements"
+    - title: "Projetos"
+      url: "/projetos/"
+    - title: "Sobre Mim"
+      url: "/about/"
 
 #-------------------------------
 # Hero Settings
 hero:
   enable: true
   hero__title: Amintas Victor
-  hero__description: "Computer Science Bachelor @ UFCG."
-  hero__description2: "Software Engineer @ CWI."
+  hero__description: "Bacharel em Ciência da Computação | UFCG"
+  hero__description2: "Engenheiro de Software | CWI"
 
   hero__image: # You can add hero image. For example '/images/06.jpg'
 
 #-------------------------------
 # Author Global Settings
 author:
-  author__name: Alena Curtis
-  author__bio: I’m a published content creator, brand copywriter, photographer, and social media content creator and manager. I help brands connect with their customers by developing engaging content that entertains, educates, and offers value to their audience.
-  author__avatar: /images/01-1.jpg
+  author__name: Amintas Victor
+  author__bio: Sou Bacharel em Ciência da Computação pela UFCG, e atuo como Enegenheiro de Software na CWI.
+  author__avatar: /images/amintasvrp.jpeg
 
 #-------------------------------
 # Blog Section Settings
 blog__settings:
   enable: true
-  blog__title: Software Engineering
-  blog__description: Below are listed the personal Fullstack projects developed.
-  blog__title2: Site Reability Engineering
-  blog__description2: Below are listed the personal SRE projects developed.
+  blog__title: Engenharia de Software
+  blog__description: Abaixo estão listados os projetos pessoais FullStack desenvolvidos.
+  blog__title2: Administração de Sistemas
+  blog__description2: Abaixo estão listados os projetos pessoais SysAdmin desenvolvidos.
 
 #-------------------------------
 # Videos Section Settings
@@ -80,7 +70,7 @@ mailchimp__settings:
 
 #-------------------------------
 # Footer Settings
-footer__description: Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.
+footer__description:
 
 # Social Links
 social:
@@ -92,16 +82,6 @@ social:
 
 # Example of adding a new link to the footer - {icon: "instagram", link: "https://instagram.com"}
 # Other icons can be found at https://ionicons.com/v4/
-
-# Footer Navigation
-footer__menu__settings:
-  menu__items:
-    - title: "About"
-      url: "/about/"
-    - title: "Contact"
-      url: "/contact/"
-    - title: "Elements"
-      url: "/elements/"
 
 #-------------------------------
 # Contact Settings

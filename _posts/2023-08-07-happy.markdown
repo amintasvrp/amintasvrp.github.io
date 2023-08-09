@@ -1,0 +1,66 @@
+---
+layout: post
+title: "Happy: Leve felicidade para o mundo."
+description: Happy é um aplicativo web/mobile que incentiva a visita a orfanatos para mudar o dia de muitas crianças.
+date: 2023-08-07 19:00:00 -0300
+image: "/images/HAPPY.png"
+image_square: "/images/HAPPY_SQUARE.png"
+tags: [fullstack, nodejs, react, reactnative, sqlite]
+tags_color: "#b25642"
+techs:
+  - { label: "Node.js", name: "nodejs", color: "#43853d" }
+  - { label: "React", name: "react", color: "#45b8d8" }
+  - { label: "React Native", name: "reactnative", color: "#764ABC" }
+  - { label: "SQLite", name: "sqlite", color: "#003B57" }
+---
+
+## Começando com o projeto
+
+<p><iframe src="https://dms.licdn.com/playlist/vid/C5605AQFlXsy9BSfE3g/mp4-720p-30fp-crf28/0/1652973349651?e=1692147600&v=beta&t=981fHZmnd_fHi8TeZwK_JHFCwWqC4i5YHEDyJsZ6DUc" loading="lazy" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
+
+### **Arquitetura**
+
+1. **API**: servidor, em Node.js e SQLite;
+2. **WEB**: interface web, em React;
+3. **MOBILE**: interfaces nativas para Android e iOS, em React Native.
+
+### **Pré-requisitos para execução**
+
+- É necessário ter **[Node.js](https://nodejs.org/en/)** instalado na máquina;
+- Além disso, é necessário ter um package manager como **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**;
+- Por fim, é essencial ter o **[Expo](https://expo.io/)** instalado globalmente na máquina.
+
+1. Clonando o projeto:
+
+```sh
+   git clone https://github.com/amintasvrp/happy.git
+```
+
+2. Executando a aplicação:
+
+```sh
+  # Instalando dependências do servidor e criando base de dados
+  cd api
+  yarn
+  yarn migrations
+  yarn start
+
+
+  # Instalando dependências e rodando aplicação web
+  cd web
+  yarn
+  yarn start
+
+  # Instalando dependências e rodando aplicação mobile
+  cd mobile
+  yarn
+  yarn start
+```
+
+## Contribuições
+
+Faça um PR e deixe claro quais alterações foram feitas e quais bugs persistem. Não introduza bugs, seja proativo!
+
+## Licenças
+
+- **MIT License** - [_Ver detalhes_](./LICENSE.txt)

@@ -20,7 +20,17 @@ permalink: /tags/
         <div class="col col-12">
           <div class="tag__info">
             <div class="tag__counter">{{ site.tags[this_word].size }} {% if site.tags[page.tag].size < 2 %}Post{% else %}Posts{% endif %}</div>
-            <h2 class="tag__name">{{ this_word }}</h2>
+            <h2 class="tag__name">
+              {% if this_word == 'nodejs' %}
+                Node.js
+              {% elsif this_word == 'reactnative' %}
+                React Native
+              {% elsif this_word == 'sqlite' %}
+                SQLite
+              {% else %}
+                {{ this_word }}
+              {% endif %}
+            </h2>
             </div>
           </div>
         </div>

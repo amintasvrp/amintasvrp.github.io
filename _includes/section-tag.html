@@ -43,15 +43,17 @@
                 <div class="article__content">
             
                   {% if post.tags.size >= 1 %}
-                  <div class="article__tags">
-                    {% for tag in post.tags %}
-                    <a href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}"
-                      class="article__tag {% if post.tags_color %}tag-color-js{% endif %}" {% if post.tags_color
-                      %}data-accent="{{ post.tags_color }}" {% endif %} {% if post.tags_color
-                      %}style="color: {{ post.tags_color }};" {% endif %}>{{ tag }}</a>
-                    {% endfor %}
-                  </div>
-                  {% endif %}
+                      <div class="article__tags">
+                        {% for tech in post.techs %}
+                          {% if tech != 'fullstack'%}
+                            <a href="{{ site.baseurl }}/tags/?tag={{ tech.name | url_encode }}"
+                              class="article__tag {% if tech.color %}tag-color-js{% endif %}" {% if tech.color
+                              %}data-accent="{{ tech.color }}"{% else %}data-accent="{{ post.tags_color }}" {% endif %} {% if tech.color %}style="color: {{ tech.color }};"
+                              {% else %}style="color: {{ tech.color }};"{% endif %}>{{ tech.label }}</a>
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                      {% endif %}
             
                   <h2 class="article__title">
                     <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
