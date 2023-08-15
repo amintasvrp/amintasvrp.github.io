@@ -1,0 +1,111 @@
+---
+layout: post
+title: "Monitor: Gerenciando recursos de VMs com Grafana."
+description: Utilizando o Grafana para monitorar o status dos recursos de Máquinas Virtuais.
+date: 2023-08-07 16:00:00 -0300
+image: "/images/GRAFANA.png"
+image_square: "/images/GRAFANA_SQUARE.png"
+tags: [sysadmin, grafana, ubuntu, influxdb]
+tags_color: "#b25642"
+techs:
+  - { label: "Grafana", name: "grafana", color: "#F46800" }
+  - { label: "Ubuntu", name: "ubuntu", color: "#FF6C37" }
+  - { label: "Influx DB", name: "influxdb", color: "#22ADF6" }
+---
+
+## Começando com a atividade
+
+<p><iframe src="https://dms.licdn.com/playlist/vid/C4E05AQEk2eDTzs4wzA/mp4-720p-30fp-crf28/0/1612041370466?e=1692374400&v=beta&t=Ovmc5HoMQMzjP-_2cMzLddWSqUOB9A4yifSvKPKdcGQ" loading="lazy" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
+
+Esta plataforma visa monitorar instâncias de VM em Nuvem, utilizando o protocolo SNMP e as tecnologias InfluxDB e Grafana.
+
+### **Pré-requisitos**
+
+1. Clonando o projeto:
+
+```sh
+   git clone https://github.com/amintasvrp/sysadmin-toolkit.git
+```
+
+2. Vá para o diretório do Monitor
+
+```sh
+   cd monitor
+```
+
+### **Configurando dependências**
+
+Primeiro, adicionamos a linha abaixo ao final do arquivo `/usr/share/snmp/snmp.conf` (se não existir, crie-o). Assim, garantimos a utilização do **protocolo SNMP** pelos scripts que serão utilizados.
+
+```
+MIBS + ALL
+```
+
+Em seguida, instalamos o **InfluxDB**, o qual será responsável por armazenar os dados gerados e coletados.
+
+```
+wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
+source /etc/lsb-release
+echo "deb https://repos.influxdata.com/ubuntu bionic stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+sudo apt-get update && sudo apt-get install influxdb
+```
+
+Por fim, instalamos o **Grafana**, que é responsável por consumir os dados do **InfluxDB** e apresentá-los por meio de painéis personalizáveis.
+
+```
+sudo apt-get install -y apt-transport-https software-properties-common wget
+wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+sudo apt-get update && sudo apt-get install grafana
+```
+
+### **Configurando o InfluxDB**
+
+Primeiramente, devemos iniciar os serviços responsáveis pelo **InfluxDB**:
+
+```
+sudo service influxdb start
+
+# Opcional: podemos executar o seguinte
+# comandos para iniciar serviços na inicialização.
+sudo service influxdb enable
+```
+
+Ao acessar o **InfluxDB** como usuário `admin`, criaremos um usuário `grafana` e o banco de dados `sysAdmin`, que será preenchido com os dados coletados.
+
+```
+influx -user admin
+CREATE USER grafana WITH PASSWORD 'password' WITH ALL PRIVILEGES
+CREATE DATABASE sysAdmin
+exit
+```
+
+### **Configurando o Grafana**
+
+Primeiramente, devemos iniciar os serviços responsáveis pelo InfluxDB:
+
+```
+sudo service grafana-server start
+
+# Opcional: podemos executar o seguinte
+# comandos para iniciar serviços na inicialização.
+sudo service grafana-server enable
+```
+
+Através da URL **hostname:3000** podemos acessar o painel do grafana via navegador. Em nosso primeiro login, usamos o par usuário/senha `admin` (altere a senha mais tarde!).
+
+Para conectar o Grafana ao InfluxDB, precisamos adicionar o InfluxDB como fonte de dados em `Configurações > Fonte de dados > InfluxDB`.
+
+Além disso, importe `Dashboard Main.json` e `Dashboard Secondary.json`.
+
+### **Configurando monitor.sh**
+
+Execute o script `monitor.sh`, que é responsável por coletar os dados e preencher o **InfluxDB**, com o seguinte comando:
+
+```
+sudo sh monitor.sh
+```
+
+## Contribuições
+
+Faça um PR e deixe claro quais alterações foram feitas e quais bugs persistem. Não introduza bugs, seja proativo!

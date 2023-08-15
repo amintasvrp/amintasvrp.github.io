@@ -45,12 +45,14 @@ blog__settings:
 #-------------------------------
 # Videos Section Settings
 videos__settings:
-  enable: false
+  enable: true
+  videos__title: Certificações e Diplomas
+  videos__description: Abaixo estão listados as Certificações e Diplomas obtidos.
 
 #-------------------------------
 # Tag Section Settings
 tag__settings:
-  enable: false
+  enable: true
 
 #-------------------------------
 # Author Section Settings
@@ -70,15 +72,6 @@ mailchimp__settings:
 
 #-------------------------------
 # Footer Settings
-footer__description:
-
-# Social Links
-social:
-  - { icon: "twitter", link: "https://twitter.com" }
-  - { icon: "facebook", link: "https://facebook.com" }
-  - { icon: "codepen", link: "https://codepen.io" }
-  - { icon: "pinterest", link: "https://pinterest.com" }
-  - { icon: "vimeo", link: "https://vimeo.com" }
 
 # Example of adding a new link to the footer - {icon: "instagram", link: "https://instagram.com"}
 # Other icons can be found at https://ionicons.com/v4/

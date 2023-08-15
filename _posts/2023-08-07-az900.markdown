@@ -1,0 +1,11 @@
+---
+layout: post
+title: Certificação Azure Fundamentals (AZ900)
+description: Certificação Azure Fundamentals pela Microsoft.
+date: 2023-08-07 17:00:00 -0300
+image: "/images/AZ900.png"
+image_square: "/images/AZ900_SQUARE.png"
+tags: ["cert"]
+---
+
+A certificação acima me diploma, pela Microsoft, certificado Azure Fundamentals (AZ900).

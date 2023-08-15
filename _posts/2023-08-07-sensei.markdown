@@ -26,7 +26,7 @@ techs:
 
 ### **Pré-requisitos para execução**
 
-- É necessário ter **[Node.js](https://nodejs.org/en/)** instalado na máquina;
+- É necessário ter **[Node.js v18.16.1](https://nodejs.org/en/)** instalado na máquina;
 - Além disso, é necessário ter um package manager como **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**;
 - Por fim, é essencial ter o **[Expo](https://expo.io/)** instalado globalmente na máquina.
 

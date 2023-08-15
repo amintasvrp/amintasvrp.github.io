@@ -1,0 +1,11 @@
+---
+layout: post
+title: Certificação SCRUM Fundamentals (SFC)
+description: Certificação SCRUM Fundamentals pela SCRUMStudy.
+date: 2023-08-07 15:00:00 -0300
+image: "/images/SCRUM.png"
+image_square: "/images/SCRUM_SQUARE.png"
+tags: ["cert"]
+---
+
+A certificação acima me diploma, pela SCRUMStudy, Certificado SCRUM Fundamentals (SFC).

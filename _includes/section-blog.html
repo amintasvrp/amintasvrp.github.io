@@ -10,7 +10,7 @@
         <div class="section__info">
           <div class="section__head">
             <h2 class="section__title">{{ site.data.settings.blog__settings.blog__title }}</h2>
-            <a class="section__link" href="{{ '/projetos' | relative_url }}">Ver todos os projetos<i class="ion ion-md-arrow-forward"></i></a>
+            <a class="section__link" href="{{ '/projetos' | relative_url }}">Ver projetos<i class="ion ion-md-arrow-forward"></i></a>
           </div>
           {% if site.data.settings.blog__settings.blog__description %}
             <p class="section__description">{{ site.data.settings.blog__settings.blog__description }}</p>
@@ -87,9 +87,9 @@
         <div class="section__info">
           <div class="section__head">
             <h2 class="section__title">{{ site.data.settings.blog__settings.blog__title2 }}</h2>
-            <a class="section__link" href="{{ '/projetos' | relative_url }}">Ver todos os projetos<i class="ion ion-md-arrow-forward"></i></a>
+            <a class="section__link" href="{{ '/projetos' | relative_url }}">Ver projetos<i class="ion ion-md-arrow-forward"></i></a>
           </div>
-          {% if site.data.settings.blog__settings.blog__description %}
+          {% if site.data.settings.blog__settings.blog__description2 %}
             <p class="section__description">{{ site.data.settings.blog__settings.blog__description2 }}</p>
           {% endif %}
         </div>
@@ -99,8 +99,8 @@
 
           <div class="row">
             {% if site.posts.size > 0 %}
-              {% for post in site.tags.['travel'] offset:0 limit:7 %}
-              <div class="article col {% if forloop.index == 1 and page.url == '/' %}col-12 article--first{% else %}col-4 col-d-6 col-t-12{% endif %}">
+              {% for post in site.tags.['sysadmin'] offset:0 limit:3 %}
+              <div class="article col col-4 col-d-6 col-t-12">
                   <div class="article__inner">
 
                     <div class="article__head">
@@ -122,7 +122,13 @@
                     </div>
 
                     <div class="article__content">
-      
+                
+                      <h2 class="article__title">
+                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                      </h2>
+          
+                      <p class="article__excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 160 }}{% endif %}</p>
+                
                       {% if post.tags.size >= 1 %}
                       <div class="article__tags">
                         {% for tech in post.techs %}
@@ -135,36 +141,6 @@
                         {% endfor %}
                       </div>
                     {% endif %}
-                
-                      <h2 class="article__title">
-                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                      </h2>
-          
-                      <p class="article__excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 160 }}{% endif %}</p>
-                
-                      <div class="article__meta">
-                        {% assign author = site.authors | where: 'username', post.author | first %}
-          
-                        {% if author %}
-                        <a href="{{ author.url }}" class="article__author__image">
-                          <img class="lazy" data-src="{{ author.image }}" alt="{{ author.name }}">
-                        </a>
-                        {% else %}
-                        <a href="{{site.baseurl}}/about/" class="article__author__image">
-                          <img class="lazy" data-src="{{site.data.settings.author.author__avatar}}"
-                            alt="{{site.data.settings.author.author__name}}">
-                        </a>
-                        {% endif %}
-                
-                        <div class="article__meta__bottom">
-                          {% if author %}
-                            <a class="article__author__name" href="{{ author.url }}">{{ author.name }}</a>
-                          {% else %}
-                            <a class="article__author__name" href="{{site.baseurl}}/about/">{{site.data.settings.author.author__name}}</a>
-                          {% endif %}
-                          <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-                        </div>
-                      </div>
           
                     </div>
                   </div>

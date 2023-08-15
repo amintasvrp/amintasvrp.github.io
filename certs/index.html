@@ -1,0 +1,62 @@
+---
+layout: default
+title: Certificações e Diplomas
+description: Abaixo estão listados as Certificações e Diplomas obtidos.
+---
+
+<!-- begin hero -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="hero__inner">
+          <h1 class="hero__title">{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.videos__settings.videos__title }}{% endif %}</h1>
+          {% if page.description %}
+            <p class="hero__description">{{ page.description }}</p>
+          {% else site.data.settings.videos__settings.videos__description %}
+            <p class="hero__description">{{ site.data.settings.videos__settings.videos__description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
+
+<div class="videos-page container animate">
+  <div class="row">
+    {% if site.posts.size > 0 %}
+    {% for post in site.tags['cert'] %}              
+    <div class="article col col-4 col-d-6 col-t-12">
+      <div class="article__inner">
+
+        <div class="article__head">
+
+          {% if post.image %}
+          <a href="{{ post.url | prepend: site.baseurl }}" class="article__image" aria-hidden="true" tabindex="-1">
+            <img class="lazy" data-src="{{site.baseurl}}{{post.image_square}}" alt="{{post.title}}">
+          </a>
+          {% endif %}
+
+        </div>
+
+        <div class="article__content">
+
+          <h2 class="article__title">
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+
+          <p class="article__excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 160 }}{% endif %}</p>
+
+          <div class="article__meta">
+            <div class="article__meta__bottom">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</div>

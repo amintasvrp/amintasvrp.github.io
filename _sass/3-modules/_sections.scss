@@ -164,8 +164,20 @@
 
 .dark-mode {
   .videos {
-    background: #0f151b;
+    background: var(--white);
 
+  .section__title,
+  .section__link {
+    color: var(--dark);
+  }
+
+  .article__title a,
+  .article__author__name {
+    color: var(--dark);
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
     .section__info::after {
       opacity: 1;
     }
