@@ -5,7 +5,7 @@ description: Utilizando o Grafana para monitorar o status dos recursos de Máqui
 date: 2023-08-07 16:00:00 -0300
 image: "/images/GRAFANA.png"
 image_square: "/images/GRAFANA_SQUARE.png"
-tags: [sysadmin, grafana, ubuntu, influxdb]
+tags: [project, sysadmin, grafana, ubuntu, influxdb]
 tags_color: "#b25642"
 techs:
   - { label: "Grafana", name: "grafana", color: "#F46800" }

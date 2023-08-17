@@ -1,0 +1,17 @@
+---
+layout: post
+title: Engenheiro de Software
+description: Laboratório de Sistemas Distribuídos
+date: 2023-08-07 17:00:00 -0300
+image: "/images/LSD.png"
+image_square: "/images/LSD_SQUARE.png"
+tags: ["xp"]
+---
+
+Contribuí com o desenvolvimento de interface de aplicações web, com foco em visualização de dados. Além disso, participei da evolução do backend através da implementação de microsserviços baseados no padrão Publish-Subscribe.
+
+Os projetos em que participei são:
+
+- LiteMe, uma aplicação que, em parceria com a Smartiks, envolve a recolha, tratamento e visualização de dados para auxiliar na gestão de consumo de recursos energéticos.
+
+- SmartCampus, plataforma que, em parceria com a Smartiks e a UFCG, visa implementar soluções de Smart Cities em campi universitários, que possam ser replicadas nas cidades.

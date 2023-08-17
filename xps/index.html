@@ -1,7 +1,7 @@
 ---
 layout: default
-title: ertificações e Diplomas
-description: Abaixo estão listados as certificações e diplomas obtidos.
+title: Experiências
+description: Abaixo estão listados as experiências profissionais.
 ---
 
 <!-- begin hero -->
@@ -10,8 +10,12 @@ description: Abaixo estão listados as certificações e diplomas obtidos.
     <div class="row">
       <div class="col col-12">
         <div class="hero__inner">
-          <h1 class="hero__title">Projetos</h1>
-          <p class="hero__description">Abaixo estão listados os projetos pessoais desenvolvidos.</p>
+          <h1 class="hero__title">{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.videos__settings.videos__title }}{% endif %}</h1>
+          {% if page.description %}
+            <p class="hero__description">{{ page.description }}</p>
+          {% else site.data.settings.videos__settings.videos__description %}
+            <p class="hero__description">{{ site.data.settings.videos__settings.videos__description }}</p>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -22,7 +26,7 @@ description: Abaixo estão listados as certificações e diplomas obtidos.
 <div class="videos-page container animate">
   <div class="row">
     {% if site.posts.size > 0 %}
-    {% for post in site.tags['project'] %}              
+    {% for post in site.tags['xp'] %}              
     <div class="article col col-4 col-d-6 col-t-12">
       <div class="article__inner">
 

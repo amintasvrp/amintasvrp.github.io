@@ -13,8 +13,12 @@ menu__settings:
   menu__items:
     - title: "Projetos"
       url: "/projetos/"
+    - title: "Certificações e Diplomas"
+      url: "/certs/"
+    - title: "Experiências"
+      url: "/xps/"
     - title: "Sobre Mim"
-      url: "/about/"
+      url: "/sobre"
 
 #-------------------------------
 # Hero Settings
@@ -30,7 +34,7 @@ hero:
 # Author Global Settings
 author:
   author__name: Amintas Victor
-  author__bio: Sou Bacharel em Ciência da Computação pela UFCG, e atuo como Enegenheiro de Software na CWI.
+  author__bio: Sou Bacharel em Ciência da Computação pela UFCG, e atuo como Engenheiro de Software na CWI.
   author__avatar: /images/amintasvrp.jpeg
 
 #-------------------------------
@@ -47,7 +51,7 @@ blog__settings:
 videos__settings:
   enable: true
   videos__title: Certificações e Diplomas
-  videos__description: Abaixo estão listados as Certificações e Diplomas obtidos.
+  videos__description: Abaixo estão listados as certificações e diplomas obtidos.
 
 #-------------------------------
 # Tag Section Settings
@@ -58,12 +62,12 @@ tag__settings:
 # Author Section Settings
 author__section:
   enable: true
-  author__section__title: Hello, my name is Alena. I’m reviewer and content creator.
-  author__section__description: I’m a published content creator, brand copywriter, photographer, and social media content creator and manager. I help brands connect with their customers by developing engaging content that entertains, educates, and offers value to their audience.
-  aurhor__section__button__text: More About Me
-  aurhor__section__button__link: /about
-  author__section__big__image: /images/100.jpg
-  author__section__small__image: /images/101.jpg
+  author__section__title: Sobre Mim
+  author__section__description: Me chamo Amintas Victor. Sou Bacharel em Ciência da Computação pela UFCG, e atuo como Engenheiro de Software na CWI.
+  aurhor__section__button__text: Mais sobre mim
+  aurhor__section__button__link: /sobre
+  author__section__big__image: /images/amintasvrp_real.jpeg
+  author__section__small__image: /images/amintasvrp.jpeg
 
 #-------------------------------
 # Newsletter Settings

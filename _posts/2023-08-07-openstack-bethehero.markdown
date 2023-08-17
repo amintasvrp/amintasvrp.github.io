@@ -5,7 +5,7 @@ description: Utilizando o OpenStack para realizar o deploy de uma aplicação we
 date: 2023-08-07 17:30:00 -0300
 image: "/images/OPENSTACK.png"
 image_square: "/images/OPENSTACK_SQUARE.png"
-tags: [sysadmin, openstack, docker, nodejs, react]
+tags: [project, sysadmin, openstack, docker, nodejs, react]
 tags_color: "#b25642"
 techs:
   - { label: "OpenStack", name: "openstack", color: "#ED1944" }

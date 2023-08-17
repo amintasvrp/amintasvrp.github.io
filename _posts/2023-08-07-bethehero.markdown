@@ -5,7 +5,7 @@ description: Be The Hero é uma aplicação web/mobile que conecta ONGs a pessoa
 date: 2023-08-07 17:00:00 -0300
 image: "/images/BETHEHERO.png"
 image_square: "/images/BETHEHERO_SQUARE.png"
-tags: [fullstack, nodejs, react, reactnative, sqlite]
+tags: [project, fullstack, nodejs, react, reactnative, sqlite]
 tags_color: "#b25642"
 techs:
   - { label: "Node.js", name: "nodejs", color: "#43853d" }

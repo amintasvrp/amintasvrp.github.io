@@ -5,7 +5,7 @@ description: Sensei consiste em uma aplicação web/mobile que reúne professore
 date: 2023-08-07 20:00:00 -0300
 image: "/images/SENSEI.png"
 image_square: "/images/SENSEI_SQUARE.png"
-tags: [fullstack, nodejs, react, reactnative, sqlite]
+tags: [project, fullstack, nodejs, react, reactnative, sqlite]
 tags_color: "#b25642"
 techs:
   - { label: "Node.js", name: "nodejs", color: "#43853d" }
@@ -16,7 +16,7 @@ techs:
 
 ## Começando com o projeto
 
-<p><iframe src="https://dms.licdn.com/playlist/vid/D4D05AQFseuV8frggTg/mp4-720p-30fp-crf28/0/1690312337366?e=1692126000&v=beta&t=HyZYhPhyJsHEpZVFhLK7e7yNT1UwY7BZffMNIITxAQ0" loading="lazy" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://dms.licdn.com/playlist/vid/D4D05AQFseuV8frggTg/mp4-720p-30fp-crf28/0/1690312337366?e=1692842400&v=beta&t=Fy7aSTTrNrjVRjGkUlLuIFKei69eH1eHivtVJefU75k" loading="lazy" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
 
 ### **Arquitetura**
 

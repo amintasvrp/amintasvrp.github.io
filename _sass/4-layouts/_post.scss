@@ -375,6 +375,7 @@
   .card-author__role {
     margin-bottom: 4px;
     font-size: 12px;
+    color: var(--background-color);
   }
   
   .card-author__name {
@@ -384,10 +385,11 @@
 
     .card-author__link {
       text-decoration: underline;
-      text-decoration-color: transparent;
+      text-decoration-color: var(--background-alt-color);
+      color: var(--background-color);
 
       &:hover {
-        text-decoration-color: var(--link-color-hover);
+        text-decoration-color: var(--background-color);
       }
     }
   }
@@ -518,7 +520,7 @@
   text-align: center;
 
   .error__title {
-    margin-bottom: 24px;
+    margin-bottom: 40px;
     font-size: 140px;
     line-height: 1;
   }

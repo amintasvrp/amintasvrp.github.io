@@ -5,7 +5,7 @@ description: Happy é um aplicativo web/mobile que incentiva a visita a orfanato
 date: 2023-08-07 19:00:00 -0300
 image: "/images/HAPPY.png"
 image_square: "/images/HAPPY_SQUARE.png"
-tags: [fullstack, nodejs, react, reactnative, sqlite]
+tags: [project, fullstack, nodejs, react, reactnative, sqlite]
 tags_color: "#b25642"
 techs:
   - { label: "Node.js", name: "nodejs", color: "#43853d" }
@@ -16,7 +16,7 @@ techs:
 
 ## Começando com o projeto
 
-<p><iframe src="https://dms.licdn.com/playlist/vid/C5605AQFlXsy9BSfE3g/mp4-720p-30fp-crf28/0/1652973349651?e=1692147600&v=beta&t=981fHZmnd_fHi8TeZwK_JHFCwWqC4i5YHEDyJsZ6DUc" loading="lazy" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://dms.licdn.com/playlist/vid/C5605AQFlXsy9BSfE3g/mp4-720p-30fp-crf28/0/1652973349651?e=1692842400&v=beta&t=3rOwyBBpUzkhunTs8E5sUgWhPGiDEZvJYIKu_MhCaxY" loading="lazy" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
 
 ### **Arquitetura**
 

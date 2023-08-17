@@ -8,4 +8,4 @@ linkedin: https://www.linkedin.com/in/amintasvrp
 github: https://github.com/amintasvrp
 ---
 
-Sou Bacharel em Ciência da Computação pela UFCG, e atuo como Enegenheiro de Software na CWI.
+Sou Bacharel em Ciência da Computação pela UFCG, e atuo como Engenheiro de Software na CWI.

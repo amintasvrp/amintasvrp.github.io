@@ -1,0 +1,15 @@
+---
+layout: post
+title: Engenheiro de Software
+description: CWI Software
+date: 2023-08-07 19:00:00 -0300
+image: "/images/CWI.png"
+image_square: "/images/CWI_SQUARE.png"
+tags: ["xp"]
+---
+
+Atuando na análise, evolução e documentação de soluções backend. Elas foram implementadas em arquitetura de microsserviços em um ecossitema cloud-native.
+
+Os projetos em que participo são:
+
+- Projeto Aceleração de Seguros, o qual consiste na modernização dos componentes responsáveis pela logística do marketplace de seguros. A atuação se estende desde as adaptações das APIs até o aperfeiçoamento das lógicas de negócio implementadas.

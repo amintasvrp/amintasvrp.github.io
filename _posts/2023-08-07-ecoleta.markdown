@@ -5,7 +5,7 @@ description: Ecoleta é um aplicativo web/mobile que viabiliza o descarte de res
 date: 2023-08-07 18:00:00 -0300
 image: "/images/ECOLETA.png"
 image_square: "/images/ECOLETA_SQUARE.png"
-tags: [fullstack, nodejs, react, reactnative, sqlite]
+tags: [project, fullstack, nodejs, react, reactnative, sqlite]
 tags_color: "#b25642"
 techs:
   - { label: "Node.js", name: "nodejs", color: "#43853d" }
@@ -16,7 +16,7 @@ techs:
 
 ## Começando com o projeto
 
-<p><iframe src="https://dms.licdn.com/playlist/vid/C5605AQFlXsy9BSfE3g/mp4-720p-30fp-crf28/0/1652973349651?e=1692154800&v=beta&t=57EvZl_SgE0wIyXfrUAGGQi7cHQkQlfCu-BKyE8cBsg" loading="lazy" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://dms.licdn.com/playlist/vid/C4E05AQG_OqG3SkhDWw/mp4-720p-30fp-crf28/0/1611288980417?e=1692842400&v=beta&t=5LMpkP8E54lWD1lfQ-s1CozjCEbV2Hf2fQV5VKOMDko" loading="lazy" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
 
 ### **Arquitetura**
 
