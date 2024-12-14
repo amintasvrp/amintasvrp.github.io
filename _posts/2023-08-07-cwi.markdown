@@ -16,4 +16,4 @@ Os projetos em que participo são:
 
 - Transparência Contábil, sendo responsável pela evolução dos componentes encarregados da contabilidade dos produtos financeiros comercializados, bem como na adequação destes últimos à governança interna e à legislação brasileira. Atuei no desenvolvimento de aplicações Java EE e Spring Batch, bem como em ETLs e Procedures SQL Server.
 
-- Real Estate Ads Experience, realizando o desenvolvimento de serviços de gerenciamento e moderação de anúncios de imóveis. Atuei no desenvolvimento de aplicações GraphQL, Spring Boot e Python FastAPI, além de interfaces React e Vue.
+- Real Estate Ads Experience, realizando o desenvolvimento de serviços de gerenciamento e moderação de anúncios de imóveis. Atuei no desenvolvimento de: aplicações GraphQL, Spring Boot e Python FastAPI; interfaces React e Vue; além de alterações no fluxo CI/CD utilizando as GitHub Actions.
