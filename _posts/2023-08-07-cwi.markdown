@@ -12,4 +12,8 @@ Atuando na análise, evolução e documentação de soluções backend. Elas for
 
 Os projetos em que participo são:
 
-- Projeto Aceleração de Seguros, o qual consiste na modernização dos componentes responsáveis pela logística do marketplace de seguros. A atuação se estende desde as adaptações das APIs até o aperfeiçoamento das lógicas de negócio implementadas.
+- Projeto Aceleração de Seguros, o qual consiste na modernização dos componentes responsáveis pela logística do marketplace de seguros. A atuação se estende desde as adaptações das APIs até o aperfeiçoamento das lógicas de negócio implementadas. Foram usadas as tecnologias: AngularJS e Spring, como frameworks web; MySQL e Sybase, como banco de dados; e GCP, como plataforma de serviços de nuvem.
+
+- Transparência Contábil, sendo responsável pela evolução dos componentes encarregados da contabilidade dos produtos financeiros comercializados, bem como na adequação destes últimos à governança interna e à legislação brasileira. Atuei no desenvolvimento de aplicações Java EE e Spring Batch, bem como em ETLs e Procedures SQL Server.
+
+- Real Estate Ads Experience, realizando o desenvolvimento de serviços de gerenciamento e moderação de anúncios de imóveis. Atuei no desenvolvimento de aplicações GraphQL, Spring Boot e Python FastAPI, além de interfaces React e Vue.
